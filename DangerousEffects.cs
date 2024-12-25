@@ -66,6 +66,15 @@ namespace DangerousEffects
             },
             new EntityDefinition
             {
+                Name = "Lightning Beacon",
+                Category = EntityCategory.SpecialEffect,
+                AnimatedObjectMatch = "lightning_beacons",
+                DisplayText = "LIGHTNING BEACON",
+                SizeMultiplier = 7.7f,
+                OverrideColor = Color.FromArgb(255, 255, 255, 0) // Bright yellow for lightning
+            },
+            new EntityDefinition
+            {
                 Name = "Ice Explosion",
                 Category = EntityCategory.SpecialEffect,
                 AnimatedObjectMatch = "ice_beacons",
@@ -78,6 +87,14 @@ namespace DangerousEffects
                 Name = "Lightning Clone",
                 Category = EntityCategory.Monster,
                 PathMatch = "RangerLightningClone",
+                DisplayText = "Chasing you!",
+                SizeMultiplier = 1.0f
+            },
+            new EntityDefinition
+            {
+                Name = "Chaos Orbs",
+                Category = EntityCategory.Monster,
+                PathMatch = "VolatilePlants",
                 DisplayText = "Chasing you!",
                 SizeMultiplier = 1.0f
             },
@@ -123,6 +140,15 @@ namespace DangerousEffects
                 DisplayText = "ICE EXPLOSION",
                 SizeMultiplier = 2.0f,
                 OverrideColor = Color.FromArgb(255, 0, 191, 255) // Deep Sky Blue for ice
+            },
+            new EntityDefinition
+            {
+                Name = "Ground On Death Monster",
+                Category = EntityCategory.Monster,
+                MetadataMatch = "GroundOnDeath",
+                DisplayText = "MOVE!!",
+                SizeMultiplier = 7.0f,
+                OverrideColor = Color.FromArgb(255, 128, 0, 128) // Purple color to stand out
             },
             new EntityDefinition
             {
