@@ -29,7 +29,7 @@ namespace DangerousEffects
                 DrawDestinationEndPoint = false,
                 DrawLine = false,
                 AlwaysRenderWorldUnit = true,
-                DrawFilledCircle = true,
+                DrawFilledCircle = false,
                 DrawBoundingBox = false,
                 RenderCircleThickness = 3,
                 LineThickness = 5
@@ -62,7 +62,7 @@ namespace DangerousEffects
                 DrawDestinationEndPoint = false,
                 DrawLine = false,
                 AlwaysRenderWorldUnit = true,
-                DrawFilledCircle = true,
+                DrawFilledCircle = false,
                 DrawBoundingBox = false,
                 RenderCircleThickness = 3,
                 LineThickness = 5

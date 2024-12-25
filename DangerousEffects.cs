@@ -116,6 +116,15 @@ namespace DangerousEffects
             },
             new EntityDefinition
             {
+                Name = "Living Blood",
+                Category = EntityCategory.SpecialEffect,
+                AnimatedObjectMatch = "LivingBlood",
+                DisplayText = "LIVING BLOOD",
+                SizeMultiplier = 5.0f,
+                OverrideColor = Color.FromArgb(255, 139, 0, 0) // Dark red color
+            },
+            new EntityDefinition
+            {
                 Name = "Lightning Death Monster",
                 Category = EntityCategory.Monster,
                 PathMatch = "OnDeathLightningExplosion",
@@ -158,6 +167,15 @@ namespace DangerousEffects
                 DisplayText = "CHILLED",
                 SizeMultiplier = 5.0f,
                 OverrideColor = Color.FromArgb(80, 173, 216, 230) // Light blue with low opacity
+            },
+            new EntityDefinition
+            {
+                Name = "Shocked Ground",
+                Category = EntityCategory.GroundEffect,
+                AnimatedObjectMatch = "grd_Shocked",
+                DisplayText = "SHOCKED",
+                SizeMultiplier = 5.0f,
+                OverrideColor = Color.FromArgb(80, 135, 206, 250) // Light Sky Blue with same opacity as Chilled Ground
             },
             // Ground effects - these are checked last
             new EntityDefinition
