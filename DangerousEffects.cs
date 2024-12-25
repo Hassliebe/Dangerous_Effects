@@ -84,6 +84,15 @@ namespace DangerousEffects
             },
             new EntityDefinition
             {
+                Name = "Fire Explosion",
+                Category = EntityCategory.SpecialEffect,
+                AnimatedObjectMatch = "fire_beacons",
+                DisplayText = "FIRE EXPLOSION",
+                SizeMultiplier = 7.7f,
+                OverrideColor = Color.FromArgb(255, 255, 0, 0) // Bright red for fire
+            },
+            new EntityDefinition
+            {
                 Name = "Lightning Clone",
                 Category = EntityCategory.Monster,
                 PathMatch = "RangerLightningClone",
