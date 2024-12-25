@@ -2,6 +2,8 @@
 
 A plugin that highlights dangerous ground effects and monster explosions in Path of Exile 2.
 
+Heavily based on WhereAreYouGoing (https://github.com/exCore2/WhereAreYouGoing-PoE2)
+
 ## Features
 
 - Highlights various dangerous effects:

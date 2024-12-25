@@ -124,7 +124,15 @@ namespace DangerousEffects
                 SizeMultiplier = 2.0f,
                 OverrideColor = Color.FromArgb(255, 0, 191, 255) // Deep Sky Blue for ice
             },
-
+            new EntityDefinition
+            {
+                Name = "Chilled Ground",
+                Category = EntityCategory.GroundEffect,
+                AnimatedObjectMatch = "grd_Chilled",
+                DisplayText = "CHILLED",
+                SizeMultiplier = 5.0f,
+                OverrideColor = Color.FromArgb(80, 173, 216, 230) // Light blue with low opacity
+            },
             // Ground effects - these are checked last
             new EntityDefinition
             {
