@@ -386,6 +386,17 @@ namespace DangerousEffects
 
                         if (effectDef != null)
                         {
+                            // Skip if effect is owned by player
+                            if (entity.GetComponent<Buffs>()?.Owner?.Address == player.Address) continue;
+                            if (entity.GetComponent<Stats>()?.Owner?.Address == player.Address) continue;
+                    
+                            // For animated effects, check their base object too
+                            var animated = entity.GetComponent<Animated>();
+                            if (animated?.BaseAnimatedObjectEntity != null)
+                            {
+                                if (animated.BaseAnimatedObjectEntity.GetComponent<Buffs>()?.Owner?.Address == player.Address) continue;
+                                if (animated.BaseAnimatedObjectEntity.GetComponent<Stats>()?.Owner?.Address == player.Address) continue;
+                            }
                             drawSettings = effectDef.Category == EntityCategory.GroundEffect ? Settings.GroundEffects : Settings.SpecialEffects;
                             if (drawSettings.Enable && drawSettings.World.Enable)
                             {
