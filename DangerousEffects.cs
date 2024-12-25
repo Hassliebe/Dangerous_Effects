@@ -184,7 +184,16 @@ namespace DangerousEffects
                 AnimatedObjectMatch = "grd_Shocked",
                 DisplayText = "SHOCKED",
                 SizeMultiplier = 5.0f,
-                OverrideColor = Color.FromArgb(80, 135, 206, 250) // Light Sky Blue with same opacity as Chilled Ground
+                OverrideColor = Color.FromArgb(80, 135, 206, 250) // Light Sky Blue
+            },
+            new EntityDefinition
+            {
+                Name = "Burning Ground",
+                Category = EntityCategory.GroundEffect,
+                AnimatedObjectMatch = "grd_Burning",
+                DisplayText = "BURNING",
+                SizeMultiplier = 5.0f,
+                OverrideColor = Color.FromArgb(80, 255, 140, 0) // Bright orange with low opacity
             },
             // Ground effects - these are checked last
             new EntityDefinition
