@@ -308,6 +308,10 @@ namespace DangerousEffects
             {
                 if (entity == null) continue;
 
+                // Skip if effect belongs to player
+                if (entity.TryGetComponent<Buff>(out var buff) && buff.OwnerId == player.Address) continue;
+                if (entity.TryGetComponent<Stats>(out var stats) && stats.Owner?.Address == player.Address) continue;
+
                 var drawSettings = new EffectConfig();
 
                 switch (entity.Type)
